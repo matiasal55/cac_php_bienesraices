@@ -1,0 +1,49 @@
+extends ../components/master
+block externos
+    - let directorio=".";
+    - let archivo="index";
+block content
+    main
+        h1 Venta de Casas y Departamentos Exclusivos de Lujo
+    include ../components/mas_sobre_nosotros
+    - let maximo=3;
+    include ../components/casas_depas_venta
+    a(href="./anuncios.html")
+        input(type="button", value="VER TODAS")
+    section
+        .contactar
+            h2 Encuentra la casa de tus sueños
+            p Llena el formulario de Contacto y un asesor se pondrá en contacto contigo a la brevedad
+            a(href="./contacto.html")
+                input(type="button", value="CONTACTÁNOS")
+    section
+        .nuestro_blog
+            h2 Nuestro Blog
+            article
+                img(src="./img/blog1.jpg", alt="blog1")
+                .detalles
+                    h3 Terraza en el techo de tu casa
+                    span
+                    div Escrito el: 
+                        span 20/10/2019
+                        |  por 
+                        span Admin
+                    p Consejos para construir una terraza en el techo de tu casa con los mejores materiales y ahorrando dinero.
+            article
+                img(src="./img/blog2.jpg", alt="blog2")
+                .detalles
+                    h3 Guía para la decoración de tu hogar
+                    span
+                    div Escrito el: 
+                        span 20/10/2019
+                        |  por 
+                        span Admin
+                    p Maximiza el espacio en tu hogar con esta guía, aprende a combinar muebles y colores para darle vida a tu espacio.
+        .testimoniales
+            h2 Testimoniales
+            .testimonio
+                .texto
+                    img(src="./img/comilla.svg", alt="comillas")
+                    div El personal se comportó de una excelente forma, muy buena atención y la casa que me ofrecieron cumple con todas mis expectativas
+                blockquote
+                    cite - Juan De la torre

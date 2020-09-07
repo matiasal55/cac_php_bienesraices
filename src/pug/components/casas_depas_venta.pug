@@ -1,0 +1,64 @@
+-
+    const casas=[
+        {
+            id:1,
+            title:"Casa de Lujo en el Lago",
+            detalles:"Casa en el lago con excelente vista, acabados de lujo a un excelente precio",
+            precio: 3
+        },
+        {
+            id:2,
+            title:"Casa terminados de Lujo",
+            detalles:"Casa con diseño moderno, así como tecnología inteligente y amueblada",
+            precio: 2
+        },
+        {
+            id:3,
+            title:"Casa con Alberca",
+            detalles:"Casa con alberca y acabados de Lujo en la ciudad, excelente oportunidad",
+            precio: 3
+        },
+        {
+            id:4,
+            title:"Casa fuera de la Ciudad",
+            detalles:"Casa con alberca y acabados de Lujo en la ciudad, excelente oportunidad",
+            precio: 3
+        },
+        {
+            id:5,
+            title:"Casa frente al bosque",
+            detalles:"Casa con alberca y acabados de Lujo en la ciudad, excelente oportunidad",
+            precio: 3
+        },
+        {
+            id:6,
+            title:"Casa con Alberca",
+            detalles:"Casa con alberca y acabados de Lujo en la ciudad, excelente oportunidad",
+            precio: 3
+        }
+    ];
+
+section
+    h2 Casas y Depas en Venta
+    .casas_depas_venta
+        - let num=0;
+        while num<maximo
+            .section_item
+                .img
+                    img(src=`${directorio}/img/anuncio${casas[num].id}.jpg`, alt=`${casas[num].title}`)
+                .detalles
+                    h3 #{casas[num].title}
+                    p #{casas[num].detalles}
+                    .precio #{casas[num].precio},000,000
+                    .adicionales
+                        .bano
+                            img(src=`${directorio}/img/icono_wc.svg`, alt="baño")
+                            span 3
+                        .coche
+                            img(src=`${directorio}/img/icono_estacionamiento.svg`, alt="baño")
+                            span 3
+                        .dormitorio
+                            img(src=`${directorio}/img/icono_dormitorio.svg`, alt="baño")
+                            span 2
+                    button VER PROPIEDAD
+            - num++;

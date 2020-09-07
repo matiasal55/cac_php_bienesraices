@@ -1,0 +1,27 @@
+-
+    const items=[
+        {
+            id:1,
+            alt:"seguridad",
+            title:"Seguridad"
+        },
+        {
+            id:2,
+            alt:"precio",
+            title:"El mejor precio"
+        },
+        {
+            id:3,
+            alt:"tiempo",
+            title:"A tiempo"
+        }
+    ];
+
+section
+    h2 Más Sobre Nosotros
+    .mas_sobre_nosotros
+        each item in items
+            .section_item
+                img(src=`${directorio}/img/icono${item.id}.svg`, alt=`${item.alt}`)
+                h3 #{item.title.toUpperCase()}
+                div Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat blandit viverra. Curabitur quis massa vitae mauris volutpat suscipit non id. 

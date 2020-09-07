@@ -1,0 +1,47 @@
+extends ../components/master
+block externos
+    - let directorio=".";
+    - let archivo="nosotros";
+block content
+    section
+        h2 Llene el Formulario de Contacto
+        form
+            fieldset
+                legend Información Personal
+                .campo
+                    label(for="nombre") Nombre:
+                    input(type="text", name="nombre", placeholder="Tu Nombre")
+                .campo
+                    label(for="email") E-mail:
+                    input(type="email", name="email", placeholder="Tu Email")
+                .campo
+                    label(for="telefono") Teléfono:
+                    input(type="tel", name="telefono", placeholder="Tu Teléfono")
+                .campo
+                    label(for="mensaje") Mensaje:
+                    textarea(name="mensaje", cols="30", rows="10")
+            fieldset
+                legend Información sobre Propiedad
+                .campo
+                    label(for="vende_compra") Vende o Compra:
+                    select(disabled)
+                        option(value="default" selected) --Seleccione--
+                .campo
+                    label(for="presupuesto") Presupuesto:
+                    input(type="number", name="presupuesto")
+            fieldset
+                legend Contacto
+                .campo
+                    label(for="desea") Como desea ser Contactado:
+                    label(for="telefono") Teléfono
+                    input(type="radio", name="contacto")
+                    label(for="correo") Correo
+                    input(type="radio", name="contacto")
+                .campo
+                    div Si eligió Teléfono, elija la Fecha y Hora
+                    label(for="fecha") Fecha:
+                    input(type="date", name="fecha")
+                    label(for="hora") Hora:
+                    input(type="time", name="hora")
+                .enviar
+                    button ENVIAR
