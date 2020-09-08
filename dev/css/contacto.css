@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  font-family: "Lato", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+section > div {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 30px 0px; }
+  section > div h2 {
+    margin-bottom: 30px; }
+
+section {
+  text-align: center;
+  padding-top: 50px; }
+
+.menu_items a {
+  margin: 0 10px;
+  color: white;
+  font-weight: bold; }
+
+footer {
+  background-color: #353535;
+  color: white;
+  font-weight: bold; }
+  footer .footer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 0px; }
+    footer .footer .menu {
+      display: flex; }
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #353535;
+  padding: 30px 0px; }
+  .header nav {
+    display: flex; }
+
+main {
+  display: block;
+  text-align: center; }
+  main h1 {
+    margin: 50px 0px; }
+
+form {
+  margin: 50px auto;
+  width: 60%; }
+  form fieldset .campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    text-align: left; }
+    form fieldset .campo input[type="radio"] {
+      margin-right: auto;
+      margin-bottom: 20px; }
+  form fieldset .enviar {
+    display: flex;
+    justify-content: flex-start; }
+    form fieldset .enviar button {
+      background-color: #67ad3e;
+      height: 50px;
+      border: none;
+      color: white;
+      font-weight: bold;
+      width: 150px; }

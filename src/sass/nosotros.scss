@@ -1,0 +1,25 @@
+@import "./components/master";
+
+.header {
+  @include header(false);
+}
+
+.informacion {
+  display: flex;
+  align-items: center;
+  width: 80%;
+
+  .img {
+    margin-right: 50px;
+  }
+
+  .texto {
+    text-align: left;
+
+    & > * {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@import "./components/masSobreNosotros";

@@ -6,11 +6,13 @@ html(lang="es")
         title Bienes Raíces
         block externos
         link(rel="stylesheet", href=`${directorio}/css/${archivo}.css`)
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
     body
         include ../components/header_menu
         block content
         footer
-            .menu
-                include ../components/menu
-            .derechos
-                div Todos Los Derechos Reservados &copy;
+            .footer
+                .menu
+                    include ../components/menu
+                .derechos
+                    div Todos Los Derechos Reservados &copy;

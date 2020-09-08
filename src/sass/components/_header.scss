@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $color3;
+  padding: 30px 0px;
+
+  nav {
+    display: flex;
+  }
+}

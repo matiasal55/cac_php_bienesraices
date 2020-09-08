@@ -1,0 +1,6 @@
+@import "./components/master";
+@import "./components/casasDeptosVenta";
+
+.header {
+  @include header(false);
+}

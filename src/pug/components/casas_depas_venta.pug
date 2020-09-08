@@ -49,7 +49,7 @@ section
                 .detalles
                     h3 #{casas[num].title}
                     p #{casas[num].detalles}
-                    .precio #{casas[num].precio},000,000
+                    .precio $#{casas[num].precio},000,000
                     .adicionales
                         .bano
                             img(src=`${directorio}/img/icono_wc.svg`, alt="baño")
@@ -60,5 +60,10 @@ section
                         .dormitorio
                             img(src=`${directorio}/img/icono_dormitorio.svg`, alt="baño")
                             span 2
-                    button VER PROPIEDAD
+                    .boton
+                        button VER PROPIEDAD
             - num++;
+    if maximo==3
+        .boton
+            a(href="./anuncios.html")
+                input(type="button", value="VER TODAS" class="boton_verde")

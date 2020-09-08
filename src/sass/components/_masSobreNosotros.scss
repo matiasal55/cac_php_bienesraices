@@ -1,0 +1,15 @@
+.mas_sobre_nosotros {
+  display: flex;
+
+  .section_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 30px;
+
+    h3 {
+      margin: 30px 0px;
+    }
+  }
+}

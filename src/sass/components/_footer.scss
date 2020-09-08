@@ -1,0 +1,16 @@
+footer {
+  background-color: $color3;
+  color: white;
+  font-weight: bold;
+
+  .footer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 0px;
+    .menu {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.casas_depas_venta {
+  display: flex;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .section_item {
+    text-align: left;
+    margin: 10px 30px;
+    border: 1px solid #bcbcbc;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+      width: 100%;
+    }
+
+    .detalles {
+      padding: 20px;
+
+      h3 {
+        font-weight: normal;
+      }
+
+      .precio {
+        color: $color1;
+        font-weight: bold;
+      }
+    }
+
+    .adicionales,
+    .boton {
+      display: flex;
+      justify-content: center;
+    }
+
+    .adicionales div {
+      display: flex;
+      flex-direction: row;
+      margin: 30px;
+      align-items: center;
+
+      img {
+        width: 30px;
+      }
+
+      span {
+        margin-left: 20px;
+      }
+    }
+
+    .boton button {
+      @include boton($color2, 100%);
+    }
+  }
+}

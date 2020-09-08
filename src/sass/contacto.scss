@@ -1,0 +1,42 @@
+@import "./components/master";
+
+.header {
+  @include header(false);
+}
+
+main {
+  display: block;
+  text-align: center;
+
+  h1 {
+    margin: 50px 0px;
+  }
+}
+
+form {
+  margin: 50px auto;
+  width: 60%;
+
+  fieldset {
+    .campo {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      text-align: left;
+
+      input[type="radio"] {
+        margin-right: auto;
+        margin-bottom: 20px;
+      }
+    }
+
+    .enviar {
+      display: flex;
+      justify-content: flex-start;
+
+      button {
+        @include boton($color1);
+      }
+    }
+  }
+}

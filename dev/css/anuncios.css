@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  font-family: "Lato", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+section > div {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 30px 0px; }
+  section > div h2 {
+    margin-bottom: 30px; }
+
+section {
+  text-align: center;
+  padding-top: 50px; }
+
+.menu_items a {
+  margin: 0 10px;
+  color: white;
+  font-weight: bold; }
+
+footer {
+  background-color: #353535;
+  color: white;
+  font-weight: bold; }
+  footer .footer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 0px; }
+    footer .footer .menu {
+      display: flex; }
+
+.casas_depas_venta {
+  display: flex;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+  .casas_depas_venta .section_item {
+    text-align: left;
+    margin: 10px 30px;
+    border: 1px solid #bcbcbc;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap; }
+    .casas_depas_venta .section_item img {
+      width: 100%; }
+    .casas_depas_venta .section_item .detalles {
+      padding: 20px; }
+      .casas_depas_venta .section_item .detalles h3 {
+        font-weight: normal; }
+      .casas_depas_venta .section_item .detalles .precio {
+        color: #67ad3e;
+        font-weight: bold; }
+    .casas_depas_venta .section_item .adicionales,
+    .casas_depas_venta .section_item .boton {
+      display: flex;
+      justify-content: center; }
+    .casas_depas_venta .section_item .adicionales div {
+      display: flex;
+      flex-direction: row;
+      margin: 30px;
+      align-items: center; }
+      .casas_depas_venta .section_item .adicionales div img {
+        width: 30px; }
+      .casas_depas_venta .section_item .adicionales div span {
+        margin-left: 20px; }
+    .casas_depas_venta .section_item .boton button {
+      background-color: #ec8533;
+      height: 50px;
+      border: none;
+      color: white;
+      font-weight: bold;
+      width: 100%; }
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #353535;
+  padding: 30px 0px; }
+  .header nav {
+    display: flex; }
